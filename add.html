@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="error_text">
+        <!-- hiển thị thông tin xem có thể xem có lỗi hay không hoặc đã thêm vào hay chưa-->
+    </div>
+
+    <form>
+        <label for="name">Tên liên lạc</label>
+        <input type="text" name="name" id="name" maxlength="50" required>
+
+        <label for="address">Địa chỉ</label>
+        <input type="text" name="address" id="address" maxlength="50">
+
+        <label>Giới tính</label>
+        <input type="radio" name="gender" value="nam" id="gender_male"> Nam
+        <input type="radio" name="gender" value="nu" id="gender_female"> Nữ
+        <input type="radio" name="gender" value="other" id="gender_other"> Khác
+
+        <label for="company">Tên công ty</label>
+        <input type="text" name="company" id="company" maxlength="50">
+
+        <label for="state">Trạng thái</label>
+        <select name="state" id="state">
+            <option value="thụ động">Thụ động</option>
+            <option value="đang mở">Đang mở</option>
+            <option value="đã phản hồi">Đã phản hồi</option>
+        </select>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" maxlength="50">
+
+        <label for="tel">Điện thoại</label>
+        <input type="tel" name="tel" id="tel" pattern="[0-9]{10}" placeholder="Nhập số điện thoại 10 chữ số">
+
+        <label for="department">Phòng ban</label>
+        <input type="text" name="department" id="department" maxlength="50">
+
+        <label for="position">Chức vụ</label>
+        <input type="text" name="position" id="position" maxlength="50">
+
+        <input type="submit" id="submit" value="Lưu" class="submit">
+    </form>
+
+</body>
+
+</html>

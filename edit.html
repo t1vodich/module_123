@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Hộp thông báo lỗi -->
+    <div class="error_text">
+        <!-- Nội dung lỗi sẽ hiển thị ở đây -->
+    </div>
+
+    <!-- Nút lưu -->
+    <button class="sumbit">Lưu</button>
+
+    <!-- Form nhập liệu -->
+    <form>
+        <label for="name">Tên liên lạc</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="address">Địa chỉ</label>
+        <input type="text" name="address" id="address">
+
+        <label for="gender">Giới tính</label>
+        <div>
+            <input type="radio" name="gender" value="nam" id="gender_male">
+            <label for="gender_male">Nam</label>
+            <input type="radio" name="gender" value="nu" id="gender_female">
+            <label for="gender_female">Nữ</label>
+            <input type="radio" name="gender" value="other" id="gender_other">
+            <label for="gender_other">Other</label>
+        </div>
+
+        <label for="company">Tên công ty</label>
+        <input type="text" name="company" id="company">
+
+        <label for="state">Trạng thái</label>
+        <select name="state" id="state">
+            <option value="thụ động">Thụ động</option>
+            <option value="đang mở">Đang mở</option>
+            <option value="đã phản hồi">Đã phản hồi</option>
+        </select>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+
+        <label for="phone">Điện thoại</label>
+        <input type="tel" name="phone" id="phone">
+
+        <label for="department">Phòng ban</label>
+        <input type="text" name="department" id="department">
+
+        <label for="position">Chức vụ</label>
+        <input type="text" name="position" id="position">
+    </form>
+
+    <script src="js/edit.js?v=1"></script>
+</body>
+
+</html>
